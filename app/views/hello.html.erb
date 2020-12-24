@@ -1,0 +1,7 @@
+<h1>Hi, <%= session[:name] %>.</h1>
+<%= form_tag ({controller: 'secrets', action: 'show', method: 'post'}) do %>
+  <input type=submit value='Secret'>
+<% end %>
+<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+  <input type=submit value='Logout'>
+<% end %>
